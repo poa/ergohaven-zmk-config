@@ -161,9 +161,23 @@
                 <&macro_tap>,
                 <&to_en>;
 
-            label = "EN";
+            label = "RU";
             wait-ms = <0>;
             tap-ms = <30>;
+        };
+    };
+
+    conditional_layers {
+        compatible = "zmk,conditional-layers";
+
+        Media {
+            if-layers = <2 4>;
+            then-layer = <5>;
+        };
+
+        MediaRu {
+            if-layers = <3 4>;
+            then-layer = <5>;
         };
     };
 
@@ -256,17 +270,4 @@
         };
     };
 
-    conditional_layers {
-        compatible = "zmk,conditional-layers";
-
-        Media {
-            if-layers = <2 4>;
-            then-layer = <5>;
-        };
-
-        MediaRu {
-            if-layers = <3 4>;
-            then-layer = <5>;
-        };
-    };
 };
