@@ -91,6 +91,18 @@
             key-positions = <15 16>;
             layers = <0 1>;
         };
+
+        ru_cyr_yo {
+            bindings = <&kp GRAVE>;
+            key-positions = <17 16>;
+            layers = <1>;
+        };
+
+        ru_cyr_hsgn {
+            bindings = <&kp RU_CYRILLIC_HARD_SIGN>;
+            key-positions = <45 46>;
+            layers = <1>;
+        };
     };
 
     macros {
@@ -172,12 +184,12 @@
 
         Media {
             if-layers = <2 4>;
-            then-layer = <5>;
+            then-layer = <6>;
         };
 
         MediaRu {
             if-layers = <3 4>;
-            then-layer = <5>;
+            then-layer = <6>;
         };
     };
 
@@ -186,11 +198,11 @@
 
         Base {
             bindings = <
-&kp GRAVE  &kp N1             &kp N2             &kp N3          &kp N4          &kp N5                                         &kp N6  &kp N7          &kp N8          &kp N9         &kp N0            &kp BSPC
-&kp TAB    &kp Q              &kp W              &kp E           &kp R           &kp T                                          &kp Y   &kp U           &kp I           &kp O          &kp P             &kp BSLH
-&kp ESC    &u_mtl LEFT_GUI A  &u_mtl LEFT_ALT S  &u_mtl LCTRL D  &u_mtl LSHFT F  &kp G                                          &kp H   &u_mtr RSHFT J  &u_mtr RCTRL K  &u_mtr RALT L  &u_mtr RGUI SEMI  &kp SQT
-&kp LSHFT  &kp Z              &kp X              &kp C           &kp V           &kp B          &kp C_MUTE    &kp C_PLAY_PAUSE  &kp N   &kp M           &kp COMMA       &kp DOT        &kp FSLH          &kp RSHFT
-                              &kp LGUI           &kp LALT        &kp LCTRL       &u_lt 4 SPACE  &kp SPACE     &kp ENTER         &mo 2   &kp RCTRL       &kp RALT        &kp RGUI
+&kp GRAVE  &kp N1             &kp N2             &kp N3          &kp N4          &kp N5                                            &kp N6  &kp N7          &kp N8          &kp N9         &kp N0            &kp BSPC
+&kp TAB    &kp Q              &kp W              &kp E           &kp R           &kp T                                             &kp Y   &kp U           &kp I           &kp O          &kp P             &kp BSLH
+&kp ESC    &u_mtl LEFT_GUI A  &u_mtl LEFT_ALT S  &u_mtl LCTRL D  &u_mtl LSHFT F  &kp G                                             &kp H   &u_mtr RSHFT J  &u_mtr RCTRL K  &u_mtr RALT L  &u_mtr RGUI SEMI  &kp SQT
+&kp LSHFT  &kp Z              &kp X              &kp C           &kp V           &kp B          &kp C_MUTE       &kp C_PLAY_PAUSE  &kp N   &kp M           &kp COMMA       &kp DOT        &kp FSLH          &kp RSHFT
+                              &kp LGUI           &kp LALT        &kp LCTRL       &u_lt 4 SPACE  &u_lt 5 SPACE    &kp ENTER         &mo 2   &kp RCTRL       &kp RALT        &kp RGUI
             >;
 
             display-name = "Base";
@@ -247,20 +259,31 @@
 
         Nav {
             bindings = <
-&kp F1  &kp F2  &kp F3        &kp F4    &kp F5         &kp F6                           &kp F7           &kp F8     &kp F9      &kp F10    &kp F11          &kp F12
-&trans  &trans  &kp HOME      &kp UP    &kp END        &kp INS                          &kp KP_MINUS     &kp KP_N7  &kp KP_N8   &kp KP_N9  &kp KP_DIVIDE    &trans
-&trans  &trans  &kp LEFT      &kp DOWN  &kp RIGHT      &kp RET                          &kp KP_PLUS      &kp KP_N4  &kp KP_N5   &kp KP_N6  &kp KP_MULTIPLY  &trans
-&trans  &trans  &kp LC(LEFT)  &kp CAPS  &kp LC(RIGHT)  &kp DEL  &trans    &trans        &kp PRINTSCREEN  &kp KP_N1  &kp KP_N2   &kp KP_N3  &trans           &trans
-                &trans        &trans    &trans         &trans   &trans    &kp KP_ENTER  &mo 2            &kp KP_N0  &kp KP_DOT  &trans
+&kp F1  &kp F2           &kp F3        &kp F4     &kp F5         &kp F6                             &kp F7    &kp F8     &kp F9      &kp F10          &kp F11         &kp F12
+&trans  &kp PRINTSCREEN  &kp LC(LEFT)  &none      &kp LC(RIGHT)  &none                              &kp INS   &kp HOME   &kp PG_UP   &caps_word       &kp BACKSPACE   &trans
+&trans  &sk LEFT_GUI     &kp LALT      &kp LCTRL  &kp LSHFT      &kp ENTER                          &kp LEFT  &kp DOWN   &kp UP      &kp RIGHT_ARROW  &kp DEL         &trans
+&trans  &trans           &trans        &trans     &none          &none      &trans    &trans        &kp DEL   &kp END    &kp PG_DN   &kp CAPS         &kp SCROLLLOCK  &trans
+                         &trans        &trans     &trans         &trans     &trans    &kp KP_ENTER  &mo 2     &kp KP_N0  &kp KP_DOT  &trans
             >;
 
             display-name = "Nav";
         };
 
+        Num {
+            display-name = "Nav";
+            bindings = <
+&kp F1  &kp F2  &kp F3        &kp F4    &kp F5         &kp F6                           &kp F7           &kp F8     &kp F9      &kp F10    &kp F11         &kp F12
+&trans  &trans  &kp HOME      &kp UP    &kp END        &kp INS                          &kp KP_DIVIDE    &kp KP_N7  &kp KP_N8   &kp KP_N9  &kp KP_MINUS    &trans
+&trans  &trans  &trans        &trans    &trans         &trans                           &kp KP_MULTIPLY  &kp KP_N4  &kp KP_N5   &kp KP_N6  &kp KP_PLUS     &trans
+&trans  &trans  &kp LC(LEFT)  &kp CAPS  &kp LC(RIGHT)  &kp DEL  &trans    &trans        &kp PRINTSCREEN  &kp KP_N1  &kp KP_N2   &kp KP_N3  &kp KP_NUMLOCK  &trans
+                &trans        &trans    &trans         &trans   &trans    &kp KP_ENTER  &trans           &kp KP_N0  &kp KP_DOT  &trans
+            >;
+        };
+
         Media {
             bindings = <
 &bootloader     &trans  &trans  &trans  &trans  &trans                    &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2      &bt BT_SEL 3  &bt BT_SEL 4  &bt BT_CLR_ALL
-&trans          &trans  &trans  &trans  &trans  &trans                    &trans        &trans        &trans            &trans        &trans        &none
+&trans          &trans  &trans  &trans  &trans  &trans                    &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2      &bt BT_SEL 3  &bt BT_SEL 4  &bt BT_CLR
 &trans          &trans  &trans  &trans  &trans  &trans                    &out OUT_BLE  &kp C_VOL_DN  &kp C_MUTE        &kp C_VOL_UP  &trans        &trans
 &studio_unlock  &trans  &trans  &trans  &trans  &trans  &trans    &trans  &out OUT_USB  &kp C_PREV    &kp C_PLAY_PAUSE  &kp C_NEXT    &trans        &trans
                         &trans  &trans  &trans  &none   &trans    &trans  &none         &trans        &trans            &trans
@@ -269,5 +292,4 @@
             display-name = "Media";
         };
     };
-
 };
