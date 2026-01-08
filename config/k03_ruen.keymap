@@ -94,7 +94,7 @@
 
         ru_cyr_yo {
             bindings = <&kp GRAVE>;
-            key-positions = <17 16>;
+            key-positions = <13 14>;
             layers = <1>;
         };
 
@@ -102,6 +102,17 @@
             bindings = <&kp RU_CYRILLIC_HARD_SIGN>;
             key-positions = <45 46>;
             layers = <1>;
+        };
+
+        ru_cyr_ha {
+            bindings = <&kp RU_CYRILLIC_HA>;
+            key-positions = <21 22>;
+            layers = <1>;
+        };
+
+        ru_cyr_e {
+            bindings = <&kp RU_CYRILLIC_E>;
+            key-positions = <34 33>;
         };
     };
 
@@ -198,11 +209,11 @@
 
         Base {
             bindings = <
-&kp GRAVE  &kp N1             &kp N2             &kp N3          &kp N4          &kp N5                                            &kp N6  &kp N7          &kp N8          &kp N9         &kp N0            &kp BSPC
-&kp TAB    &kp Q              &kp W              &kp E           &kp R           &kp T                                             &kp Y   &kp U           &kp I           &kp O          &kp P             &kp BSLH
-&kp ESC    &u_mtl LEFT_GUI A  &u_mtl LEFT_ALT S  &u_mtl LSHFT D  &u_mtl LCTRL F  &kp G                                             &kp H   &u_mtr RCTRL J  &u_mtr RSHFT K  &u_mtr RALT L  &u_mtr RGUI SEMI  &kp SQT
-&kp LSHFT  &kp Z              &kp X              &kp C           &kp V           &kp B          &kp C_MUTE       &kp C_PLAY_PAUSE  &kp N   &kp M           &kp COMMA       &kp DOT        &kp FSLH          &kp RSHFT
-                              &kp LGUI           &kp LALT        &kp LCTRL       &u_lt 4 SPACE  &u_lt 5 SPACE    &kp ENTER         &mo 2   &kp RCTRL       &kp RALT        &kp RGUI
+&kp GRAVE        &kp N1             &kp N2             &kp N3          &kp N4          &kp N5                                            &kp N6  &kp N7          &kp N8             &kp N9         &kp N0            &kp BSPC
+&kp TAB          &kp Q              &kp W              &kp E           &kp R           &kp T                                             &kp Y   &kp U           &kp I              &kp O          &kp P             &kp BACKSPACE
+&u_mt LCTRL ESC  &u_mtl LEFT_GUI A  &u_mtl LEFT_ALT S  &u_mtl LSHFT D  &u_mtl LCTRL F  &kp G                                             &kp H   &u_mtr RCTRL J  &u_mtr RSHFT K     &u_mtr RALT L  &u_mtr RGUI SEMI  &key_repeat
+&kp LSHFT        &kp Z              &kp X              &kp C           &kp V           &kp B          &kp C_MUTE       &kp C_PLAY_PAUSE  &kp N   &kp M           &kp COMMA          &kp DOT        &kp FSLH          &kp RSHFT
+                                    &kp LCTRL          &kp LGUI        &kp LALT        &u_lt 4 SPACE  &u_lt 5 SPACE    &kp ENTER         &mo 2   &kp RALT        &u_mt RGUI C_MENU  &kp RCTRL
             >;
 
             display-name = "Base";
@@ -218,10 +229,10 @@
         BaseRu {
             display-name = "BaseRu";
             bindings = <
-&kp GRAVE  &kp N1                          &kp N2                            &kp N3                        &kp N4                      &kp N5                                &kp N6              &kp N7                      &kp N8                       &kp N9                      &kp N0                       &kp BSPC
-&kp TAB    &kp RU_CYRILLIC_SHORT_I         &kp RU_CYRILLIC_TSE               &kp RU_CYRILLIC_U             &kp RU_CYRILLIC_KA          &kp RU_CYRILLIC_IE                    &kp RU_CYRILLIC_EN  &kp RU_CYRILLIC_GHE         &kp RU_CYRILLIC_SHA          &kp RU_CYRILLIC_SHCHA       &kp RU_CYRILLIC_ZE           &kp RU_CYRILLIC_HA
-&kp ESC    &u_mtl LEFT_GUI RU_CYRILLIC_EF  &u_mtl LEFT_ALT RU_CYRILLIC_YERU  &u_mtl LSHIFT RU_CYRILLIC_VE  &u_mtl LCTRL RU_CYRILLIC_A  &kp RU_CYRILLIC_PE                    &kp RU_CYRILLIC_ER  &u_mtr RSHFT RU_CYRILLIC_O  &u_mtr RSHFT RU_CYRILLIC_EL  &u_mtr RALT RU_CYRILLIC_DE  &u_mtr RGUI RU_CYRILLIC_ZHE  &kp RU_CYRILLIC_E
-&kp LSHFT  &kp RU_CYRILLIC_YA              &kp RU_CYRILLIC_CHE               &kp RU_CYRILLIC_ES            &kp RU_CYRILLIC_EM          &kp RU_CYRILLIC_I   &trans    &trans  &kp RU_CYRILLIC_TE  &kp RU_CYRILLIC_SOFT_SIGN   &kp RU_CYRILLIC_BE           &kp RU_CYRILLIC_YU          &kp RU_DOT                   &kp RSHFT
+&kp GRAVE  &kp N1                          &kp N2                            &kp N3                        &kp N4                      &kp N5                                &kp N6              &kp N7                      &kp N8                       &kp N9                      &kp N0                       &trans
+&trans     &kp RU_CYRILLIC_SHORT_I         &kp RU_CYRILLIC_TSE               &kp RU_CYRILLIC_U             &kp RU_CYRILLIC_KA          &kp RU_CYRILLIC_IE                    &kp RU_CYRILLIC_EN  &kp RU_CYRILLIC_GHE         &kp RU_CYRILLIC_SHA          &kp RU_CYRILLIC_SHCHA       &kp RU_CYRILLIC_ZE           &trans
+&trans     &u_mtl LEFT_GUI RU_CYRILLIC_EF  &u_mtl LEFT_ALT RU_CYRILLIC_YERU  &u_mtl LSHIFT RU_CYRILLIC_VE  &u_mtl LCTRL RU_CYRILLIC_A  &kp RU_CYRILLIC_PE                    &kp RU_CYRILLIC_ER  &u_mtr RSHFT RU_CYRILLIC_O  &u_mtr RSHFT RU_CYRILLIC_EL  &u_mtr RALT RU_CYRILLIC_DE  &u_mtr RGUI RU_CYRILLIC_ZHE  &trans
+&trans     &kp RU_CYRILLIC_YA              &kp RU_CYRILLIC_CHE               &kp RU_CYRILLIC_ES            &kp RU_CYRILLIC_EM          &kp RU_CYRILLIC_I   &trans    &trans  &kp RU_CYRILLIC_TE  &kp RU_CYRILLIC_SOFT_SIGN   &kp RU_CYRILLIC_BE           &kp RU_CYRILLIC_YU          &kp RU_DOT                   &trans
                                            &trans                            &trans                        &trans                      &trans              &trans    &trans  &mo 3               &trans                      &trans                       &trans
             >;
 
@@ -259,10 +270,10 @@
 
         Nav {
             bindings = <
-&kp F1  &kp F2           &kp F3        &kp F4      &kp F5         &kp F6                             &kp F7    &kp F8     &kp F9      &kp F10          &kp F11         &kp F12
-&trans  &kp PRINTSCREEN  &kp LC(LEFT)  &none       &kp LC(RIGHT)  &none                              &kp INS   &kp HOME   &kp PG_UP   &caps_word       &kp BACKSPACE   &trans
-&trans  &sk LEFT_GUI     &kp LALT      &kp LSHIFT  &kp LCTRL      &kp ENTER                          &kp LEFT  &kp DOWN   &kp UP      &kp RIGHT_ARROW  &kp DEL         &trans
-&trans  &trans           &trans        &trans      &none          &none      &trans    &trans        &kp DEL   &kp END    &kp PG_DN   &kp CAPS         &kp SCROLLLOCK  &trans
+&kp F1  &kp F2           &kp F3        &kp F4      &kp F5         &kp F6                             &kp F7    &kp F8     &kp F9      &kp F10          &kp F11          &kp F12
+&trans  &kp PRINTSCREEN  &kp LC(LEFT)  &none       &kp LC(RIGHT)  &none                              &kp INS   &kp HOME   &kp PG_UP   &caps_word       &kp PAUSE_BREAK  &trans
+&trans  &sk LEFT_GUI     &kp LALT      &kp LSHIFT  &kp LCTRL      &kp ENTER                          &kp LEFT  &kp DOWN   &kp UP      &kp RIGHT_ARROW  &kp PRINTSCREEN  &trans
+&trans  &kp LC(Z)        &kp LC(X)     &kp LC(C)   &kp LC(V)      &kp LC(B)  &trans    &trans        &kp DEL   &kp END    &kp PG_DN   &kp CAPS         &kp SCROLLLOCK   &trans
                          &trans        &trans      &trans         &trans     &trans    &kp KP_ENTER  &mo 2     &kp KP_N0  &kp KP_DOT  &trans
             >;
 
