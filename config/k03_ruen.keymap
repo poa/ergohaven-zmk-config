@@ -119,6 +119,19 @@
         ru_cyr_e {
             bindings = <&kp RU_CYRILLIC_E>;
             key-positions = <34 33>;
+            layers = <1>;
+        };
+
+        lpar {
+            bindings = <&kp LPAR>;
+            key-positions = <26 27>;
+            layers = <2 3>;
+        };
+
+        rpar {
+            bindings = <&kp RPAR>;
+            key-positions = <27 28>;
+            layers = <2 3>;
         };
     };
 
@@ -205,7 +218,7 @@
         };
 
         MediaRu {
-            if-layers = <3 4>;
+            if-layers = <4 4>;
             then-layer = <6>;
         };
     };
@@ -253,11 +266,11 @@
 
         Sym {
             bindings = <
-&trans  &trans     &trans    &trans     &trans            &trans                       &trans     &trans                 &trans                 &trans               &trans               &trans
-&trans  &kp GRAVE  &kp LT    &kp LPAR   &kp LEFT_BRACKET  &kp PRCNT                    &kp CARET  &kp RIGHT_BRACKET      &kp RPAR               &kp GT               &kp SQT              &trans
-&trans  &kp EXCL   &kp AT    &kp HASH   &kp DOLLAR        &kp MINUS                    &kp PLUS   &u_osm_mt RCTRL RCTRL  &u_osm_mt RSHFT RSHFT  &u_osm_mt RALT RALT  &u_osm_mt RGUI RGUI  &trans
-&trans  &kp PIPE   &kp AMPS  &kp ASTRK  &kp FSLH          &kp UNDER  &trans    &trans  &kp EQUAL  &kp BSLH               &kp COMMA              &kp DOT              &kp QMARK            &trans
-                   &trans    &trans     &trans            &trans     &trans    &trans  &none      &trans                 &trans                 &trans
+&trans     &trans     &trans    &trans     &trans            &trans                       &trans     &trans                 &trans                 &trans               &trans               &trans
+&kp TILDE  &kp GRAVE  &kp LT    &kp SEMI   &kp LEFT_BRACKET  &kp PRCNT                    &kp CARET  &kp RIGHT_BRACKET      &kp COLON              &kp GT               &kp SQT              &trans
+&trans     &kp EXCL   &kp AT    &kp HASH   &kp DOLLAR        &kp MINUS                    &kp PLUS   &u_osm_mt RCTRL RCTRL  &u_osm_mt RSHFT RSHFT  &u_osm_mt RALT RALT  &u_osm_mt RGUI RGUI  &kp DQT
+&trans     &kp PIPE   &kp AMPS  &kp ASTRK  &kp FSLH          &kp UNDER  &trans    &trans  &kp EQUAL  &kp BSLH               &kp COMMA              &kp DOT              &kp QMARK            &trans
+                      &trans    &trans     &trans            &trans     &trans    &trans  &none      &trans                 &trans                 &trans
             >;
 
             display-name = "Sym";
@@ -266,11 +279,11 @@
         SymRu {
             display-name = "SymRu";
             bindings = <
-&trans  &trans        &en AT        &en HASH      &en DLLR     &trans                           &trans          &trans    &en CARET    &trans    &trans      &trans
-&trans  &trans        &en LT        &kp EQUAL     &en GT       &en GRAVE                        &trans          &en LBKT  &kp UNDER    &en RBKT  &trans      &trans
-&trans  &kp RU_BSLH   &kp LPAR      &kp MINUS     &kp RPAR     &kp PLUS                         &kp RU_PERCENT  &en LBRC  &kp RU_SEMI  &en RBRC  &kp EXCL    &kp RU_QUESTION
-&trans  &kp RU_COMMA  &kp RU_ASTRK  &kp RU_COLON  &kp RU_FSLH  &kp RU_NUMERO  &trans    &trans  &trans          &en PIPE  &en TILDE    &en AMPS  &kp RU_DOT  &trans
-                      &trans        &trans        &trans       &trans         &trans    &trans  &none           &trans    &trans       &trans
+&trans         &trans     &trans    &trans       &trans            &trans                       &trans     &trans                 &trans                 &trans               &trans               &trans
+&en TILDE      &en GRAVE  &en LT    &kp RU_SEMI  &en LEFT_BRACKET  &kp PRCNT                    &en CARET  &en RIGHT_BRACKET      &kp RU_COLON           &en GT               &en SQT              &trans
+&kp RU_NUMERO  &kp EXCL   &en AT    &en HASH     &en DOLLAR        &kp MINUS                    &kp PLUS   &u_osm_mt RCTRL RCTRL  &u_osm_mt RSHFT RSHFT  &u_osm_mt RALT RALT  &u_osm_mt RGUI RGUI  &kp RU_DQT
+&trans         &kp PIPE   &en AMPS  &kp ASTRK    &kp FSLH          &kp UNDER  &trans    &trans  &kp EQUAL  &kp BSLH               &kp RU_COMMA           &kp RU_DOT           &kp RU_QMARK         &trans
+                          &trans    &trans       &trans            &trans     &trans    &trans  &none      &trans                 &trans                 &trans
             >;
         };
 
@@ -278,7 +291,7 @@
             bindings = <
 &kp F1  &kp F2                   &kp F3               &kp F4                  &kp F5                 &kp F6                         &kp F7         &kp F8    &kp F9     &kp F10          &kp F11          &kp F12
 &trans  &kp LA(TAB)              &kp LC(LEFT)         &none                   &kp LC(RIGHT)          &kp LC(TAB)                    &kp INS        &kp HOME  &kp PG_UP  &caps_word       &kp PAUSE_BREAK  &trans
-&trans  &u_osm_mt LEFT_GUI LGUI  &u_osm_mt LALT LALT  &u_osm_mt LSHIFT LSHFT  &u_osm_mt LCTRL LCTRL  &kp ENTER                      &kp LEFT       &kp DOWN  &kp UP     &kp RIGHT_ARROW  &kp PRINTSCREEN  &trans
+&trans  &u_osm_mt LEFT_GUI LGUI  &u_osm_mt LALT LALT  &u_osm_mt LSHIFT LSHFT  &u_osm_mt LCTRL LCTRL  &kp ENTER                      &kp LEFT       &kp DOWN  &kp UP     &kp RIGHT_ARROW  &kp PRINTSCREEN  &kp ENTER
 &trans  &kp LC(Z)                &kp LC(X)            &kp LC(C)               &kp LC(V)              &kp LC(B)    &trans    &trans  &kp DEL        &kp END   &kp PG_DN  &kp CAPS         &kp SCROLLLOCK   &trans
                                  &trans               &trans                  &trans                 &none        &trans    &trans  &u_lt 2 ENTER  &trans    &trans     &trans
             >;
