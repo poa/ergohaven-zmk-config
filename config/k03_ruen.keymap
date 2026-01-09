@@ -323,6 +323,7 @@
         compatible = "zmk,keymap";
 
         Base {
+            display-name = "Base";
             bindings = <
 &kp GRAVE        &kp N1  &kp N2    &kp N3    &kp N4   &kp N5                                            &kp N6           &kp N7   &kp N8     &kp N9            &kp N0    &kp BSPC
 &kp TAB          &kp Q   &kp W     &kp E     &kp R    &kp T                                             &kp Y            &kp U    &kp I      &kp O             &kp P     &kp BACKSPACE
@@ -331,7 +332,6 @@
                          &sk LGUI  &sk LALT  &m_la 4  &u_lt 5 SPACE  &u_lt 7 SPACE    &key_repeat       &u_ltsk 6 RSHFT  &m_la 2  &sk RCTRL  &u_mt RGUI K_APP
             >;
 
-            display-name = "Base";
             sensor-bindings =
                 <&enc_vol>,
                 <&enc_prevnext>,
@@ -361,6 +361,7 @@
         };
 
         Sym {
+            display-name = "Sym";
             bindings = <
 &trans     &trans     &trans    &trans     &trans            &trans                       &trans     &trans             &trans     &trans    &trans     &trans
 &kp TILDE  &kp GRAVE  &kp LT    &kp SEMI   &kp LEFT_BRACKET  &kp PRCNT                    &kp CARET  &kp RIGHT_BRACKET  &kp COLON  &kp GT    &kp SQT    &trans
@@ -369,7 +370,6 @@
                       &trans    &trans     &trans            &trans     &trans    &trans  &trans     &none              &trans     &trans
             >;
 
-            display-name = "Sym";
         };
 
         SymRu {
@@ -384,6 +384,7 @@
         };
 
         Nav {
+            display-name = "Nav";
             bindings = <
 &kp F1  &kp F2       &kp F3        &kp F4     &kp F5         &kp F6                         &kp F7      &kp F8    &kp F9    &kp F10          &kp F11          &kp F12
 &trans  &kp LA(TAB)  &kp LC(LEFT)  &none      &kp LC(RIGHT)  &kp LC(TAB)                    &caps_word  &kp INS   &kp HOME  &kp PG_UP        &kp PAUSE_BREAK  &trans
@@ -392,11 +393,10 @@
                      &trans        &trans     &none          &trans       &trans    &trans  &trans      &mo 2     &trans    &trans
             >;
 
-            display-name = "Nav";
         };
 
         Mouse {
-            display-name = "Nav";
+            display-name = "Mouse";
             bindings = <
 &kp F1  &kp F2       &kp F3        &kp F4     &kp F5         &kp F6                            &kp F7          &kp F8          &kp F9        &kp F10          &kp F11  &kp F12
 &trans  &kp LA(TAB)  &kp LC(LEFT)  &none      &kp LC(RIGHT)  &kp LC(TAB)                       &none           &none           &none         &none            &none    &trans
@@ -404,12 +404,10 @@
 &trans  &kp LC(Z)    &kp LC(X)     &kp LC(C)  &kp LC(V)      &kp LC(B)    &trans    &trans     &msc SCRL_LEFT  &msc SCRL_DOWN  &msc SCRL_UP  &msc SCRL_RIGHT  &none    &trans
                      &trans        &trans     &trans         &trans       &none     &mkp LCLK  &mkp RCLK       &mkp MCLK       &mkp MB4      &mkp MB5
             >;
-
-            label = "Mouse";
         };
 
         Num {
-            display-name = "Nav";
+            display-name = "Num";
             bindings = <
 &kp F1  &kp F2  &kp F3  &kp F4  &kp F5  &kp F6                    &kp F7           &kp F8      &kp F9     &kp F10    &kp F11         &kp F12
 &trans  &trans  &trans  &trans  &trans  &trans                    &kp KP_MULTIPLY  &kp KP_N7   &kp KP_N8  &kp KP_N9  &kp KP_PLUS     &trans
@@ -417,12 +415,10 @@
 &trans  &trans  &trans  &trans  &trans  &trans  &trans    &trans  &kp KP_N0        &kp KP_N1   &kp KP_N2  &kp KP_N3  &kp KP_NUMLOCK  &trans
                 &trans  &trans  &trans  &trans  &none     &trans  &trans           &kp KP_DOT  &trans     &trans
             >;
-
-            label = "Num";
         };
 
         Func {
-            display-name = "Nav";
+            display-name = "Func";
             bindings = <
 &kp F1  &kp F2  &kp F3  &kp F4  &kp F5  &kp F6                    &kp F7   &kp F8  &kp F9  &kp F10  &kp F11  &kp F12
 &trans  &trans  &trans  &trans  &trans  &trans                    &kp F12  &kp F7  &kp F8  &kp F9   &kp F15  &trans
@@ -430,11 +426,10 @@
 &trans  &trans  &trans  &trans  &trans  &trans  &trans    &trans  &kp F10  &kp F1  &kp F2  &kp F3   &kp F13  &trans
                 &trans  &trans  &trans  &trans  &none     &trans  &trans   &trans  &trans  &trans
             >;
-
-            label = "Func";
         };
 
         Media {
+            display-name = "Media";
             bindings = <
 &bootloader     &trans  &trans  &trans  &trans  &trans                    &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2      &bt BT_SEL 3  &bt BT_SEL 4  &bt BT_CLR_ALL
 &trans          &trans  &trans  &trans  &trans  &trans                    &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2      &bt BT_SEL 3  &bt BT_SEL 4  &bt BT_CLR
@@ -442,8 +437,6 @@
 &studio_unlock  &trans  &trans  &trans  &trans  &trans  &trans    &trans  &out OUT_USB  &kp C_PREV    &kp C_PLAY_PAUSE  &kp C_NEXT    &trans        &trans
                         &trans  &trans  &trans  &none   &trans    &trans  &none         &trans        &trans            &trans
             >;
-
-            display-name = "Media";
         };
     };
 };
