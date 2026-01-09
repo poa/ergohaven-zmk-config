@@ -154,6 +154,27 @@
             bindings = <&kp C_NEXT>, <&kp C_PREV>;
         };
 
+        sticky_forever: sticky_forever {
+            compatible = "zmk,behavior-sticky-key";
+            #binding-cells = <1>;
+            bindings = <&m_press_key_twice>;
+            release-after-ms = <600000>;
+            ignore-modifiers;
+        };
+
+        &sk {
+                release-after-ms = <60000>;
+        };
+
+        u_skq: sticky_key_quick_release {
+            compatible = "zmk,behavior-sticky-key";
+            #binding-cells = <1>;
+            bindings = <&kp>;
+            release-after-ms = <3000>;
+            quick-release;
+            ignore-modifiers;
+        };
+
 
         u_mt: mod_tap {
             compatible = "zmk,behavior-hold-tap";
@@ -171,22 +192,13 @@
             bindings = <&mo>, <&kp>;
         };
 
-        u_ltsk: u_ltsk {
-            compatible = "zmk,behavior-hold-tap";
-            label = "u_ltsk";
-            bindings = <&mo>, <&sk>;
-
-            #binding-cells = <2>;
-            tapping-term-ms = <200>;
-            flavor = "balanced";
-        };
-
         u_ltsk: layer_tap_sticky_key {
+            label = "u_ltsk";
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
             tapping-term-ms = <200>;
-            flavor = "tap-preferred";
             bindings = <&mo>, <&u_skq>;
+            flavor = "tap-preferred";
         };
 
         u_mtl: mod_tap_left {
@@ -214,27 +226,6 @@
             hold-trigger-key-positions = <0 1 2 3 4 5 12 13 14 15 16 17 24 25 26 27 28 29 36 37 38 39 40 41 42 50 51 52 54 53>;
             hold-trigger-on-release;
         };
-
-        sticky_forever: sticky_forever {
-            compatible = "zmk,behavior-sticky-key";
-            #binding-cells = <1>;
-            bindings = <&m_press_key_twice>;
-            release-after-ms = <600000>;
-            ignore-modifiers;
-        };
-
-        &sk {
-                release-after-ms = <60000>;
-        };
-
-        u_skq: sticky_key_quick_release {
-                compatible = "zmk,behavior-sticky-key";
-                #binding-cells = <1>;
-                bindings = <&kp>;
-                release-after-ms = <3000>;
-                quick-release;
-                ignore-modifiers;
-            };
 
         cm_lgui: cm_lgui { 
             compatible = "zmk,behavior-mod-morph"; 
