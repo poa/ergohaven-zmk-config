@@ -160,7 +160,7 @@
             compatible = "zmk,behavior-sticky-key";
             #binding-cells = <1>;
             bindings = <&kp>;
-            release-after-ms = <10000>;
+            release-after-ms = <3000>;
             quick-release;
             ignore-modifiers;
         };
@@ -179,7 +179,7 @@
             label = "u_htsk";
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
-            tapping-term-ms = <150>;
+            tapping-term-ms = <200>;
             bindings = <&kp>, <&sk>;
 
             flavor = "tap-preferred";
@@ -196,7 +196,7 @@
         u_lt: user_layer_tap {
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
-            tapping-term-ms = <50>;
+            tapping-term-ms = <100>;
             flavor = "tap-preferred";
             bindings = <&mo>, <&kp>;
         };
