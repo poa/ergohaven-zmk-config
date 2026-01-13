@@ -400,7 +400,7 @@
         };
 
         cmbenalt {
-            bindings = <&layer_en>;
+            bindings = <&layer_enalt>;
             key-positions = <15 14 13>;
             timeout-ms = <30>;
             require-prior-idle-ms = <20>;
