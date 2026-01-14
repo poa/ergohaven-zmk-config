@@ -136,42 +136,42 @@ layers:
   - '0'
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - RU CYRILLIC SHORT I
-  - RU CYRILLIC TSE
-  - RU CYRILLIC U
-  - RU CYRILLIC KA
-  - RU CYRILLIC IE
-  - RU CYRILLIC EN
-  - RU CYRILLIC GHE
-  - RU CYRILLIC SHA
-  - RU CYRILLIC SHCHA
-  - RU CYRILLIC ZE
+  - SHORT I
+  - TSE
+  - U
+  - KA
+  - IE
+  - EN
+  - GHE
+  - SHA
+  - SHCHA
+  - ZE
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - RU CYRILLIC EF
-  - RU CYRILLIC YERU
-  - RU CYRILLIC VE
-  - RU CYRILLIC A
-  - RU CYRILLIC PE
-  - RU CYRILLIC ER
-  - RU CYRILLIC O
-  - RU CYRILLIC EL
-  - RU CYRILLIC DE
-  - RU CYRILLIC ZHE
-  - RU CYRILLIC E
+  - EF
+  - YERU
+  - VE
+  - A
+  - PE
+  - ER
+  - O
+  - EL
+  - DE
+  - ZHE
+  - E
   - {t: ▽, type: trans}
-  - RU CYRILLIC YA
-  - RU CYRILLIC CHE
-  - RU CYRILLIC ES
-  - RU CYRILLIC EM
-  - RU CYRILLIC I
+  - YA
+  - CHE
+  - ES
+  - EM
+  - I
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - RU CYRILLIC TE
-  - RU CYRILLIC SOFT SIGN
-  - RU CYRILLIC BE
-  - RU CYRILLIC YU
-  - RU DOT
+  - TE
+  - SOFT SIGN
+  - BE
+  - YU
+  - .
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -260,16 +260,16 @@ layers:
   - '&en TILDE'
   - '&en GRAVE'
   - '&en LT'
-  - RU SEMI
+  - ;
   - '&en LEFT_BRACKET'
   - '%'
   - '&en CARET'
   - '&en RIGHT_BRACKET'
-  - RU COLON
+  - ':'
   - '&en GT'
   - '&en SQT'
   - {t: ▽, type: trans}
-  - RU NUMERO
+  - NUMERO
   - '!'
   - '&en AT'
   - '&en HASH'
@@ -280,7 +280,7 @@ layers:
   - {t: '&m_press_key_twice LSHFT', h: sticky, s: '&m_release_key_twice LSHFT'}
   - {t: '&m_press_key_twice LALT', h: sticky, s: '&m_release_key_twice LALT'}
   - {t: '&m_press_key_twice LGUI', h: sticky, s: '&m_release_key_twice LGUI'}
-  - RU DQT
+  - '"'
   - {t: ▽, type: trans}
   - '|'
   - '&en AMPS'
@@ -291,9 +291,9 @@ layers:
   - {t: ▽, type: trans}
   - '='
   - \
-  - RU COMMA
-  - RU DOT
-  - RU QMARK
+  - ','
+  - .
+  - '?'
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -624,13 +624,13 @@ combos:
   k: '`'
   l: [BaseRu]
 - p: [45, 46]
-  k: RU CYRILLIC HARD SIGN
+  k: HARD SIGN
   l: [BaseRu]
 - p: [21, 22]
-  k: RU CYRILLIC HA
+  k: HA
   l: [BaseRu]
 - p: [34, 33]
-  k: RU CYRILLIC E
+  k: E
   l: [BaseRu]
 - p: [26, 27]
   k: (
