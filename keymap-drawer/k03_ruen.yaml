@@ -56,7 +56,7 @@ layers:
   - '&m_la 5'
   - {t: SPACE, h: Num}
   - '&td_lt_mouse'
-  - ENTER
+  - '&key_repeat'
   - {t: RSHFT, h: RSHIFT}
   - {t: Sym, h: '&m_la 3'}
   - {t: RCTRL, h: RCTRL}
@@ -136,41 +136,41 @@ layers:
   - '0'
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - SHORT I
-  - TSE
-  - U
-  - KA
-  - IE
-  - EN
-  - GHE
-  - SHA
-  - SHCHA
-  - ZE
+  - CYRILLIC SHORT I
+  - CYRILLIC TSE
+  - CYRILLIC U
+  - CYRILLIC KA
+  - CYRILLIC IE
+  - CYRILLIC EN
+  - CYRILLIC GHE
+  - CYRILLIC SHA
+  - CYRILLIC SHCHA
+  - CYRILLIC ZE
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - EF
-  - YERU
-  - VE
-  - A
-  - PE
-  - ER
-  - O
-  - EL
-  - DE
-  - ZHE
-  - E
+  - CYRILLIC EF
+  - CYRILLIC YERU
+  - CYRILLIC VE
+  - CYRILLIC A
+  - CYRILLIC PE
+  - CYRILLIC ER
+  - CYRILLIC O
+  - CYRILLIC EL
+  - CYRILLIC DE
+  - CYRILLIC ZHE
+  - CYRILLIC E
   - {t: ▽, type: trans}
-  - YA
-  - CHE
-  - ES
-  - EM
-  - I
+  - CYRILLIC YA
+  - CYRILLIC CHE
+  - CYRILLIC ES
+  - CYRILLIC EM
+  - CYRILLIC I
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - TE
-  - SOFT SIGN
-  - BE
-  - YU
+  - CYRILLIC TE
+  - CYRILLIC SOFT SIGN
+  - CYRILLIC BE
+  - CYRILLIC YU
   - .
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -329,7 +329,7 @@ layers:
   - HOME
   - PG UP
   - PAUSE BREAK
-  - {t: ▽, type: trans}
+  - DEL
   - {t: ▽, type: trans}
   - {t: '&m_press_key_twice LGUI', h: sticky, s: '&m_release_key_twice LGUI'}
   - {t: '&m_press_key_twice LALT', h: sticky, s: '&m_release_key_twice LALT'}
@@ -624,13 +624,13 @@ combos:
   k: '`'
   l: [BaseRu]
 - p: [45, 46]
-  k: HARD SIGN
+  k: CYRILLIC HARD SIGN
   l: [BaseRu]
 - p: [21, 22]
-  k: HA
+  k: CYRILLIC HA
   l: [BaseRu]
 - p: [34, 33]
-  k: E
+  k: CYRILLIC E
   l: [BaseRu]
 - p: [26, 27]
   k: (
