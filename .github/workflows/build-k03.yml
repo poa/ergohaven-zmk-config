@@ -1,4 +1,4 @@
-name: Build ZMK firmware
+name: Build EH-K03 ZMK firmware
 on:
   workflow_dispatch:  # can be triggered manually
   push:               # automatically run on changes to following paths

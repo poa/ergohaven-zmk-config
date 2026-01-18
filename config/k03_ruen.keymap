@@ -352,8 +352,6 @@
         };
 
         td_lt_lt_kp: td_lt_lt_kp {
-            )
-
             compatible = "zmk,behavior-tap-dance";
             label = "TD_LT_LT_KP";
             #binding-cells = <0>;
