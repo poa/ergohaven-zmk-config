@@ -1,7 +1,7 @@
 layout: {zmk_keyboard: k03_ruen}
 layers:
   Base:
-  - {t: ESC, s: '`'}
+  - '`'
   - '1'
   - '2'
   - '3'
@@ -136,41 +136,41 @@ layers:
   - '0'
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - CYRILLIC SHORT I
-  - CYRILLIC TSE
-  - CYRILLIC U
-  - CYRILLIC KA
-  - CYRILLIC IE
-  - CYRILLIC EN
-  - CYRILLIC GHE
-  - CYRILLIC SHA
-  - CYRILLIC SHCHA
-  - CYRILLIC ZE
+  - SHORT I
+  - TSE
+  - U
+  - KA
+  - IE
+  - EN
+  - GHE
+  - SHA
+  - SHCHA
+  - ZE
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: CYRILLIC ER, h: LGUI}
-  - {t: CYRILLIC YERU, h: LALT}
-  - {t: CYRILLIC VE, h: LSHFT}
-  - {t: CYRILLIC A, h: LCTRL}
-  - CYRILLIC PE
-  - CYRILLIC ER
-  - {t: CYRILLIC O, h: RCTRL}
-  - {t: CYRILLIC EL, h: RSHFT}
-  - {t: CYRILLIC DE, h: RALT}
-  - {t: CYRILLIC ZHE, h: RGUI}
-  - CYRILLIC E
+  - {t: ER, h: LGUI}
+  - {t: YERU, h: LALT}
+  - {t: VE, h: LSHFT}
+  - {t: A, h: LCTRL}
+  - PE
+  - ER
+  - {t: O, h: RCTRL}
+  - {t: EL, h: RSHFT}
+  - {t: DE, h: RALT}
+  - {t: ZHE, h: RGUI}
+  - E
   - {t: ▽, type: trans}
-  - CYRILLIC YA
-  - CYRILLIC CHE
-  - CYRILLIC ES
-  - CYRILLIC EM
-  - CYRILLIC I
+  - YA
+  - CHE
+  - ES
+  - EM
+  - I
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - CYRILLIC TE
-  - CYRILLIC SOFT SIGN
-  - CYRILLIC BE
-  - CYRILLIC YU
+  - TE
+  - SOFT SIGN
+  - BE
+  - YU
   - .
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -198,38 +198,38 @@ layers:
   - {t: ▽, type: trans}
   - '~'
   - '`'
-  - <
-  - '>'
-  - ;
-  - '|'
-  - ^
-  - ':'
-  - ':'
-  - $
+  - '['
+  - ']'
   - ''''
+  - '"'
+  - '#'
+  - ^
+  - '{'
+  - '}'
+  - $
   - {t: ▽, type: trans}
   - '&ru RU_NUMERO'
-  - '!'
+  - {t: '!', h: LGUI}
+  - {t: '=', h: LALT}
+  - {t: '-', h: LSHFT}
+  - {t: +, h: LCTRL}
   - '*'
-  - _
-  - '='
-  - '&'
-  - +
-  - {t: '&m_press_key_twice LCTRL', h: sticky, s: '&m_release_key_twice LCTRL'}
-  - {t: '&m_press_key_twice LSHFT', h: sticky, s: '&m_release_key_twice LSHFT'}
-  - {t: '&m_press_key_twice LALT', h: sticky, s: '&m_release_key_twice LALT'}
-  - {t: '&m_press_key_twice LGUI', h: sticky, s: '&m_release_key_twice LGUI'}
+  - KP ASTERISK
+  - {t: ':', h: RCTRL}
+  - {t: (, h: RSHFT}
+  - {t: ), h: RALT}
+  - {t: ;, h: RGUI}
   - '"'
+  - {t: Sym, h: toggle}
+  - <
+  - '|'
+  - _
+  - '>'
+  - /
+  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - '@'
   - '&'
-  - '-'
-  - /
-  - _
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - '='
-  - \
   - ','
   - .
   - '?'
@@ -281,7 +281,7 @@ layers:
   - {t: '&m_press_key_twice LALT', h: sticky, s: '&m_release_key_twice LALT'}
   - {t: '&m_press_key_twice LGUI', h: sticky, s: '&m_release_key_twice LGUI'}
   - '"'
-  - {t: ▽, type: trans}
+  - {t: SymRu, h: toggle}
   - '|'
   - '&en AMPS'
   - '*'
@@ -342,7 +342,7 @@ layers:
   - RIGHT ARROW
   - PRINTSCREEN
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - {t: Nav, h: toggle}
   - Ctl+Z
   - Ctl+X
   - Ctl+C
@@ -366,67 +366,6 @@ layers:
   - Sym
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  Mouse:
-  - F1
-  - F2
-  - F3
-  - F4
-  - F5
-  - F6
-  - F7
-  - F8
-  - F9
-  - F10
-  - F11
-  - F12
-  - {t: ▽, type: trans}
-  - {t: '&m_hold_mod_press_key LALT TAB', s: TAB}
-  - Ctl+LEFT
-  - {t: '&m_hold_mod_press_key LGUI TAB', s: TAB}
-  - Ctl+RIGHT
-  - {t: '&m_hold_mod_press_key LCTRL TAB', s: TAB}
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: '&m_press_key_twice LGUI', h: sticky, s: '&m_release_key_twice LGUI'}
-  - {t: '&m_press_key_twice LALT', h: sticky, s: '&m_release_key_twice LALT'}
-  - {t: '&m_press_key_twice LSHFT', h: sticky, s: '&m_release_key_twice LSHFT'}
-  - {t: '&m_press_key_twice LCTRL', h: sticky, s: '&m_release_key_twice LCTRL'}
-  - ENTER
-  - '&mmv MOVE_LEFT'
-  - '&mmv MOVE_DOWN'
-  - '&mmv MOVE_UP'
-  - '&mmv MOVE_RIGHT'
-  - ''
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - Ctl+Z
-  - Ctl+X
-  - Ctl+C
-  - Ctl+V
-  - Ctl+B
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - '&msc SCRL_LEFT'
-  - '&msc SCRL_DOWN'
-  - '&msc SCRL_UP'
-  - '&msc SCRL_RIGHT'
-  - ''
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - ''
-  - '&mkp LCLK'
-  - '&mkp RCLK'
-  - '&mkp MCLK'
-  - '&mkp MB4'
-  - '&mkp MB5'
   Num:
   - F1
   - F2
@@ -464,7 +403,7 @@ layers:
   - KP 6
   - KP MINUS
   - KP ENTER
-  - {t: ▽, type: trans}
+  - {t: Num, h: toggle}
   - Ctl+Z
   - Ctl+X
   - Ctl+C
@@ -505,8 +444,8 @@ layers:
   - {t: '&m_hold_mod_press_key LALT TAB', s: TAB}
   - Ctl+LEFT
   - {t: '&m_hold_mod_press_key LGUI TAB', s: TAB}
-  - Ctl+RIGHT
-  - {t: '&m_hold_mod_press_key LCTRL TAB', s: TAB}
+  - Alt+Sft+R
+  - Sft+Alt+T
   - F12
   - F7
   - F8
@@ -518,14 +457,14 @@ layers:
   - {t: '&m_press_key_twice LALT', h: sticky, s: '&m_release_key_twice LALT'}
   - {t: '&m_press_key_twice LSHFT', h: sticky, s: '&m_release_key_twice LSHFT'}
   - {t: '&m_press_key_twice LCTRL', h: sticky, s: '&m_release_key_twice LCTRL'}
-  - ENTER
+  - Alt+Sft+G
   - F11
   - F4
   - F5
   - F6
   - F14
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - {t: Func, h: toggle}
   - Ctl+Z
   - Ctl+X
   - Ctl+C
@@ -549,6 +488,67 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
+  Mouse:
+  - F1
+  - F2
+  - F3
+  - F4
+  - F5
+  - F6
+  - F7
+  - F8
+  - F9
+  - F10
+  - F11
+  - F12
+  - {t: ▽, type: trans}
+  - {t: '&m_hold_mod_press_key LALT TAB', s: TAB}
+  - Ctl+LEFT
+  - {t: '&m_hold_mod_press_key LGUI TAB', s: TAB}
+  - Ctl+RIGHT
+  - {t: '&m_hold_mod_press_key LCTRL TAB', s: TAB}
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: '&m_press_key_twice LGUI', h: sticky, s: '&m_release_key_twice LGUI'}
+  - {t: '&m_press_key_twice LALT', h: sticky, s: '&m_release_key_twice LALT'}
+  - {t: '&m_press_key_twice LSHFT', h: sticky, s: '&m_release_key_twice LSHFT'}
+  - {t: '&m_press_key_twice LCTRL', h: sticky, s: '&m_release_key_twice LCTRL'}
+  - ENTER
+  - '&mmv MOVE_LEFT'
+  - '&mmv MOVE_DOWN'
+  - '&mmv MOVE_UP'
+  - '&mmv MOVE_RIGHT'
+  - ''
+  - {t: ▽, type: trans}
+  - {t: Mouse, h: toggle}
+  - Ctl+Z
+  - Ctl+X
+  - Ctl+C
+  - Ctl+V
+  - Ctl+B
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - '&msc SCRL_LEFT'
+  - '&msc SCRL_DOWN'
+  - '&msc SCRL_UP'
+  - '&msc SCRL_RIGHT'
+  - ''
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - ''
+  - '&mkp LCLK'
+  - '&mkp RCLK'
+  - '&mkp MCLK'
+  - '&mkp MB4'
+  - '&mkp MB5'
   Media:
   - '&bootloader'
   - {t: ▽, type: trans}
@@ -620,35 +620,39 @@ combos:
 - p: [15, 14, 13]
   k: '&layer_enalt'
   l: [Base, EnAlt, BaseRu]
-- p: [13, 14]
+- p: [12, 0]
   k: '`'
   l: [BaseRu]
-- p: [45, 46]
-  k: CYRILLIC HARD SIGN
+- p: [47, 46]
+  k: HARD SIGN
   l: [BaseRu]
-- p: [21, 22]
-  k: CYRILLIC HA
+- p: [22, 34]
+  k: HA
   l: [BaseRu]
-- p: [34, 33]
-  k: CYRILLIC E
+- p: [23, 35]
+  k: E
   l: [BaseRu]
-- p: [26, 27]
-  k: (
-  l: [Sym, SymRu, Base, BaseRu]
-- p: [27, 28]
-  k: )
-  l: [Sym, SymRu, Base, BaseRu]
-- p: [33, 32]
+- p: [31, 30]
   k: '-'
-  l: [Base, BaseRu]
-- p: [32, 31]
+  l: [Base, BaseRu, EnAlt]
+- p: [44, 45]
   k: _
-  l: [Base, BaseRu]
-- p: [54, 55]
-  k: '&key_repeat'
-  l: [Base, BaseRu]
-- p: [12, 13]
+  l: [Base, BaseRu, EnAlt]
+- p: [12, 24]
   k: BT CLR ALL
   l: [Media]
 - p: [54, 53]
   k: Media
+  l: [Base, EnAlt, BaseRu]
+- p: [18, 19]
+  k: +
+  l: [Base, EnAlt, BaseRu]
+- p: [29, 28]
+  k: /
+  l: [Base, EnAlt, BaseRu]
+- p: [40, 41]
+  k: \
+  l: [Base, EnAlt, BaseRu]
+- p: [16, 17]
+  k: '|'
+  l: [Base, EnAlt, BaseRu]
