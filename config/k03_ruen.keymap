@@ -355,7 +355,7 @@
             compatible = "zmk,behavior-tap-dance";
             label = "TD_LT_LT_KP";
             #binding-cells = <0>;
-            bindings = <&u_lt 8 ENTER>, <&u_lt 6 ENTER>;
+            bindings = <&u_lt 7 ENTER>, <&u_lt 9 ENTER>;
         };
 
         td_bt_clr: td_bt_clr {
@@ -398,7 +398,7 @@
 
         ru_cyr_yo {
             bindings = <&kp GRAVE>;
-            key-positions = <13 14>;
+            key-positions = <12 0>;
             layers = <2>;
             timeout-ms = <30>;
             require-prior-idle-ms = <20>;
@@ -406,7 +406,7 @@
 
         ru_cyr_hsgn {
             bindings = <&kp RU_CYRILLIC_HARD_SIGN>;
-            key-positions = <45 46>;
+            key-positions = <47 46>;
             layers = <2>;
             timeout-ms = <30>;
             require-prior-idle-ms = <20>;
@@ -414,7 +414,7 @@
 
         ru_cyr_ha {
             bindings = <&kp RU_CYRILLIC_HA>;
-            key-positions = <21 22>;
+            key-positions = <22 34>;
             layers = <2>;
             timeout-ms = <30>;
             require-prior-idle-ms = <20>;
@@ -422,60 +422,42 @@
 
         ru_cyr_e {
             bindings = <&kp RU_CYRILLIC_E>;
-            key-positions = <34 33>;
+            key-positions = <23 35>;
             layers = <2>;
-            timeout-ms = <30>;
-            require-prior-idle-ms = <20>;
-        };
-
-        lpar {
-            bindings = <&kp LPAR>;
-            key-positions = <26 27>;
-            layers = <3 4 0 2>;
-            timeout-ms = <30>;
-            require-prior-idle-ms = <20>;
-        };
-
-        rpar {
-            bindings = <&kp RPAR>;
-            key-positions = <27 28>;
-            layers = <3 4 0 2>;
             timeout-ms = <30>;
             require-prior-idle-ms = <20>;
         };
 
         hyphen {
             bindings = <&kp MINUS>;
-            key-positions = <33 32>;
+            key-positions = <31 30>;
             layers = <0 2>;
             timeout-ms = <30>;
             require-prior-idle-ms = <20>;
         };
 
-        underscore {
+        under {
             bindings = <&kp UNDER>;
-            key-positions = <32 31>;
+            key-positions = <44 45>;
             layers = <0 2>;
             require-prior-idle-ms = <20>;
             timeout-ms = <30>;
-        };
-
-        repeat {
-            bindings = <&key_repeat>;
-            key-positions = <54 55>;
-            layers = <0 2>;
-            timeout-ms = <70>;
         };
 
         clear_all_bt {
             bindings = <&bt BT_CLR_ALL>;
-            key-positions = <12 13>;
-            layers = <9>;
+            key-positions = <12 24>;
+            layers = <10>;
         };
 
         l_media {
-            bindings = <&mo 9>;
+            bindings = <&mo 10>;
             key-positions = <54 53>;
+        };
+
+        plus {
+            bindings = <&kp PLUS>;
+            key-positions = <18 19>;
         };
     };
 
@@ -505,11 +487,11 @@
         Base {
             display-name = "Base";
             bindings = <
-&gresc             &kp N1       &kp N2           &kp N3           &kp N4        &kp N5                                           &kp N6               &kp N7        &kp N8             &kp N9            &kp N0          &kp BSPC
+&kp GRAVE          &kp N1       &kp N2           &kp N3           &kp N4        &kp N5                                           &kp N6               &kp N7        &kp N8             &kp N9            &kp N0          &kp BSPC
 &kp TAB            &kp Q        &kp W            &kp E            &kp R         &kp T                                            &kp Y                &kp U         &kp I              &kp O             &kp P           &kp BACKSPACE
 &u_mt LCTRL ESC    &mtl LGUI A  &mtl LALT S      &mtl LSHFT D     &mtl LCTRL F  &kp G                                            &kp H                &mtr RCTRL J  &mtr RSHFT K       &mtr RALT L       &mtr RGUI SEMI  &kp SQT
 &mtsk LSHFT LSHFT  &kp Z        &kp X            &kp C            &kp V         &kp B          &kp C_MUTE      &kp C_PLAY_PAUSE  &kp N                &kp M         &kp COMMA          &kp DOT           &kp FSLH        &mtsk RSHFT RSHFT
-                                &mtsk LGUI LGUI  &mtsk LALT LALT  &m_la 5       &u_lt 7 SPACE  &td_lt_lt_kp    &key_repeat       &mtsk RSHIFT RSHIFT  &lasl 3 3     &mtsk RCTRL RCTRL  &u_mt RGUI K_APP
+                                &mtsk LGUI LGUI  &mtsk LALT LALT  &m_la 5       &u_lt 6 SPACE  &td_lt_lt_kp    &key_repeat       &mtsk RSHIFT RSHIFT  &lasl 3 3     &mtsk RCTRL RCTRL  &u_mt RGUI K_APP
             >;
 
             sensor-bindings =
@@ -564,11 +546,11 @@
         Sym {
             display-name = "Sym";
             bindings = <
-&trans         &trans     &trans     &trans            &trans         &trans                       &trans     &trans     &trans     &trans    &trans     &trans
-&kp TILDE      &kp GRAVE  &kp LT     &kp GREATER_THAN  &kp SEMI       &kp PIPE                     &kp CARET  &kp COLON  &kp COLON  &kp DLLR  &kp SQT    &trans
-&ru RU_NUMERO  &kp EXCL   &kp ASTRK  &kp UNDER         &kp EQUAL      &kp AMPS                     &kp PLUS   &cm_lctrl  &cm_lshft  &cm_lalt  &cm_lgui   &kp DQT
-&trans         &kp AT     &kp AMPS   &kp MINUS         &kp FSLH       &kp UNDER  &trans    &trans  &kp EQUAL  &kp BSLH   &kp COMMA  &kp DOT   &kp QMARK  &trans
-                          &trans     &trans            &kp BACKSLASH  &trans     &trans    &trans  &trans     &none      &trans     &trans
+&trans         &trans          &trans           &trans            &trans           &trans                       &trans           &trans            &trans           &trans          &trans          &trans
+&kp TILDE      &kp GRAVE       &kp LBKT         &kp RBKT          &kp SQT          &kp DQT                      &kp HASH         &kp CARET         &kp LBRC         &kp RBRC        &kp DOLLAR      &trans
+&ru RU_NUMERO  &mtl LGUI EXCL  &mtl LALT EQUAL  &mtl LSHFT MINUS  &mtl LCTRL PLUS  &kp ASTRK                    &kp KP_ASTERISK  &mtr RCTRL COLON  &mtr RSHFT LPAR  &mtr RALT RPAR  &mtr RGUI SEMI  &kp DQT
+&tog 3         &kp LT          &kp PIPE         &kp UNDER         &kp GT           &kp SLASH  &trans    &trans  &kp AT           &kp AMPS          &kp COMMA        &kp DOT         &kp QMARK       &trans
+                               &trans           &trans            &kp BACKSLASH    &trans     &trans    &trans  &trans           &none             &trans           &trans
             >;
         };
 
@@ -578,7 +560,7 @@
 &trans         &trans     &trans    &trans       &trans            &trans                       &trans     &trans             &trans        &trans      &trans        &trans
 &en TILDE      &en GRAVE  &en LT    &kp RU_SEMI  &en LEFT_BRACKET  &kp PRCNT                    &en CARET  &en RIGHT_BRACKET  &kp RU_COLON  &en GT      &en SQT       &trans
 &kp RU_NUMERO  &kp EXCL   &en AT    &en HASH     &en DOLLAR        &kp MINUS                    &kp PLUS   &cm_lctrl          &cm_lshft     &cm_lalt    &cm_lgui      &kp RU_DQT
-&trans         &kp PIPE   &en AMPS  &kp ASTRK    &kp FSLH          &kp UNDER  &trans    &trans  &kp EQUAL  &kp BSLH           &kp RU_COMMA  &kp RU_DOT  &kp RU_QMARK  &trans
+&tog 4         &kp PIPE   &en AMPS  &kp ASTRK    &kp FSLH          &kp UNDER  &trans    &trans  &kp EQUAL  &kp BSLH           &kp RU_COMMA  &kp RU_DOT  &kp RU_QMARK  &trans
                           &trans    &trans       &trans            &trans     &trans    &trans  &trans     &none              &trans        &trans
             >;
         };
@@ -589,22 +571,11 @@
 &kp F1  &kp F2      &kp F3        &kp F4      &kp F5         &kp F6                          &kp F7      &kp F8    &kp F9    &kp F10          &kp F11          &kp F12
 &trans  &swap_wins  &kp LC(LEFT)  &swap_desk  &kp LC(RIGHT)  &swap_tabs                      &caps_word  &kp INS   &kp HOME  &kp PG_UP        &kp PAUSE_BREAK  &kp DEL
 &trans  &cm_lgui    &cm_lalt      &cm_lshft   &cm_lctrl      &kp ENTER                       &kp LEFT    &kp DOWN  &kp UP    &kp RIGHT_ARROW  &kp PRINTSCREEN  &trans
-&trans  &kp LC(Z)   &kp LC(X)     &kp LC(C)   &kp LC(V)      &kp LC(B)   &kp C_PP    &trans  &kp CAPS    &kp DEL   &kp END   &kp PG_DN        &kp SCROLLLOCK   &trans
+&tog 5  &kp LC(Z)   &kp LC(X)     &kp LC(C)   &kp LC(V)      &kp LC(B)   &kp C_PP    &trans  &kp CAPS    &kp DEL   &kp END   &kp PG_DN        &kp SCROLLLOCK   &trans
                     &kp LEFT      &kp RIGHT   &none          &trans      &trans      &trans  &kp SPACE   &mo 3     &trans    &trans
             >;
 
             sensor-bindings = <&enc_prevnext>;
-        };
-
-        Mouse {
-            display-name = "Mouse";
-            bindings = <
-&kp F1  &kp F2      &kp F3        &kp F4      &kp F5         &kp F6                           &kp F7          &kp F8          &kp F9        &kp F10          &kp F11  &kp F12
-&trans  &swap_wins  &kp LC(LEFT)  &swap_desk  &kp LC(RIGHT)  &swap_tabs                       &none           &none           &none         &none            &none    &trans
-&trans  &cm_lgui    &cm_lalt      &cm_lshft   &cm_lctrl      &kp ENTER                        &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_UP  &mmv MOVE_RIGHT  &none    &trans
-&trans  &kp LC(Z)   &kp LC(X)     &kp LC(C)   &kp LC(V)      &kp LC(B)   &trans    &trans     &msc SCRL_LEFT  &msc SCRL_DOWN  &msc SCRL_UP  &msc SCRL_RIGHT  &none    &trans
-                    &trans        &trans      &trans         &trans      &none     &mkp LCLK  &mkp RCLK       &mkp MCLK       &mkp MB4      &mkp MB5
-            >;
         };
 
         Num {
@@ -613,7 +584,7 @@
 &kp F1  &kp F2      &kp F3        &kp F4      &kp F5         &kp F6                        &kp F7           &kp F8     &kp F9     &kp F10     &kp F11         &kp F12
 &trans  &swap_wins  &kp LC(LEFT)  &swap_desk  &kp LC(RIGHT)  &swap_tabs                    &kp KP_MULTIPLY  &kp KP_N7  &kp KP_N8  &kp KP_N9   &kp KP_PLUS     &trans
 &trans  &cm_lgui    &cm_lalt      &cm_lshft   &cm_lctrl      &kp ENTER                     &kp KP_DIVIDE    &kp KP_N4  &kp KP_N5  &kp KP_N6   &kp KP_MINUS    &kp KP_ENTER
-&trans  &kp LC(Z)   &kp LC(X)     &kp LC(C)   &kp LC(V)      &kp LC(B)   &trans    &trans  &kp KP_N0        &kp KP_N1  &kp KP_N2  &kp KP_N3   &kp KP_NUMLOCK  &kp ENTER
+&tog 6  &kp LC(Z)   &kp LC(X)     &kp LC(C)   &kp LC(V)      &kp LC(B)   &trans    &trans  &kp KP_N0        &kp KP_N1  &kp KP_N2  &kp KP_N3   &kp KP_NUMLOCK  &kp ENTER
                     &trans        &trans      &trans         &none       &trans    &trans  &kp SPACE        &kp KP_N0  &kp KP_N0  &kp KP_DOT
             >;
         };
@@ -621,11 +592,22 @@
         Func {
             display-name = "Func";
             bindings = <
-&kp F1  &kp F2      &kp F3        &kp F4      &kp F5         &kp F6                        &kp F7     &kp F8  &kp F9  &kp F10  &kp F11  &kp F12
-&trans  &swap_wins  &kp LC(LEFT)  &swap_desk  &kp LC(RIGHT)  &swap_tabs                    &kp F12    &kp F7  &kp F8  &kp F9   &kp F15  &trans
-&trans  &cm_lgui    &cm_lalt      &cm_lshft   &cm_lctrl      &kp ENTER                     &kp F11    &kp F4  &kp F5  &kp F6   &kp F14  &trans
-&trans  &kp LC(Z)   &kp LC(X)     &kp LC(C)   &kp LC(V)      &kp LC(B)   &trans    &trans  &kp F10    &kp F1  &kp F2  &kp F3   &kp F13  &trans
-                    &trans        &trans      &trans         &trans      &none     &trans  &kp SPACE  &trans  &trans  &trans
+&kp F1  &kp F2      &kp F3        &kp F4      &kp F5         &kp F6                           &kp F7     &kp F8  &kp F9  &kp F10  &kp F11  &kp F12
+&trans  &swap_wins  &kp LC(LEFT)  &swap_desk  &kp LA(LS(R))  &kp LS(LA(T))                    &kp F12    &kp F7  &kp F8  &kp F9   &kp F15  &trans
+&trans  &cm_lgui    &cm_lalt      &cm_lshft   &cm_lctrl      &kp LA(LS(G))                    &kp F11    &kp F4  &kp F5  &kp F6   &kp F14  &trans
+&tog 7  &kp LC(Z)   &kp LC(X)     &kp LC(C)   &kp LC(V)      &kp LC(B)      &trans    &trans  &kp F10    &kp F1  &kp F2  &kp F3   &kp F13  &trans
+                    &trans        &trans      &trans         &trans         &none     &trans  &kp SPACE  &trans  &trans  &trans
+            >;
+        };
+
+        Mouse {
+            display-name = "Mouse";
+            bindings = <
+&kp F1  &kp F2      &kp F3        &kp F4      &kp F5         &kp F6                           &kp F7          &kp F8          &kp F9        &kp F10          &kp F11  &kp F12
+&trans  &swap_wins  &kp LC(LEFT)  &swap_desk  &kp LC(RIGHT)  &swap_tabs                       &none           &none           &none         &none            &none    &trans
+&trans  &cm_lgui    &cm_lalt      &cm_lshft   &cm_lctrl      &kp ENTER                        &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_UP  &mmv MOVE_RIGHT  &none    &trans
+&tog 8  &kp LC(Z)   &kp LC(X)     &kp LC(C)   &kp LC(V)      &kp LC(B)   &trans    &trans     &msc SCRL_LEFT  &msc SCRL_DOWN  &msc SCRL_UP  &msc SCRL_RIGHT  &none    &trans
+                    &trans        &trans      &trans         &trans      &none     &mkp LCLK  &mkp RCLK       &mkp MCLK       &mkp MB4      &mkp MB5
             >;
         };
 
