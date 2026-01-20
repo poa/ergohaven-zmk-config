@@ -62,7 +62,7 @@ layers:
   - {t: RCTRL, h: RCTRL}
   - {t: APP, h: RGUI}
   BaseAlt1:
-  - {t: ESC, s: '`'}
+  - {t: ▽, type: trans}
   - '1'
   - '2'
   - '3'
@@ -123,7 +123,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   BaseAlt2:
-  - {t: ESC, s: '`'}
+  - {t: ▽, type: trans}
   - '1'
   - '2'
   - '3'
@@ -184,7 +184,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   BaseRu:
-  - {t: ESC, s: '`'}
+  - {t: ▽, type: trans}
   - '1'
   - '2'
   - '3'
@@ -197,41 +197,41 @@ layers:
   - '0'
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - CYRILLIC SHORT I
-  - CYRILLIC TSE
-  - CYRILLIC U
-  - CYRILLIC KA
-  - CYRILLIC IE
-  - CYRILLIC EN
-  - CYRILLIC GHE
-  - CYRILLIC SHA
-  - CYRILLIC SHCHA
-  - CYRILLIC ZE
+  - SHORT I
+  - TSE
+  - U
+  - KA
+  - IE
+  - EN
+  - GHE
+  - SHA
+  - SHCHA
+  - ZE
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: CYRILLIC ER, h: LGUI}
-  - {t: CYRILLIC YERU, h: LALT}
-  - {t: CYRILLIC VE, h: LSHFT}
-  - {t: CYRILLIC A, h: LCTRL}
-  - CYRILLIC PE
-  - CYRILLIC ER
-  - {t: CYRILLIC O, h: RCTRL}
-  - {t: CYRILLIC EL, h: RSHFT}
-  - {t: CYRILLIC DE, h: RALT}
-  - {t: CYRILLIC ZHE, h: RGUI}
-  - CYRILLIC E
+  - {t: ER, h: LGUI}
+  - {t: YERU, h: LALT}
+  - {t: VE, h: LSHFT}
+  - {t: A, h: LCTRL}
+  - PE
+  - ER
+  - {t: O, h: RCTRL}
+  - {t: EL, h: RSHFT}
+  - {t: DE, h: RALT}
+  - {t: ZHE, h: RGUI}
+  - E
   - {t: ▽, type: trans}
-  - CYRILLIC YA
-  - CYRILLIC CHE
-  - CYRILLIC ES
-  - CYRILLIC EM
-  - CYRILLIC I
+  - YA
+  - CHE
+  - ES
+  - EM
+  - I
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - CYRILLIC TE
-  - CYRILLIC SOFT SIGN
-  - CYRILLIC BE
-  - CYRILLIC YU
+  - TE
+  - SOFT SIGN
+  - BE
+  - YU
   - .
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -390,7 +390,7 @@ layers:
   - HOME
   - PG UP
   - PAUSE BREAK
-  - DEL
+  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: '&m_press_key_twice LGUI', h: sticky, s: '&m_release_key_twice LGUI'}
   - {t: '&m_press_key_twice LALT', h: sticky, s: '&m_release_key_twice LALT'}
@@ -623,7 +623,7 @@ layers:
   - {t: BT, h: '3'}
   - {t: BT, h: '4'}
   - '&bootloader'
-  - '&td_bt_clr'
+  - BT CLR
   - {t: BT, h: '0'}
   - {t: BT, h: '1'}
   - {t: BT, h: '2'}
@@ -674,49 +674,48 @@ layers:
 combos:
 - p: [15, 14]
   k: '&layer_en'
-  l: [Base, BaseRu, BaseAlt1]
+  l: [Base, BaseRu, BaseAlt1, BaseAlt2]
 - p: [15, 16]
   k: '&layer_ru'
-  l: [Base, BaseRu, BaseAlt1]
+  l: [Base, BaseRu, BaseAlt1, BaseAlt2]
 - p: [15, 14, 16]
   k: '&layer_enalt'
-  l: [Base, BaseAlt1, BaseRu]
+  l: [Base, BaseAlt1, BaseRu, BaseAlt2]
 - p: [12, 24]
   k: '`'
   l: [BaseRu]
 - p: [47, 46]
-  k: CYRILLIC HARD SIGN
+  k: HARD SIGN
   l: [BaseRu]
 - p: [22, 34]
-  k: CYRILLIC HA
+  k: HA
   l: [BaseRu]
 - p: [23, 35]
-  k: CYRILLIC E
+  k: E
   l: [BaseRu]
 - p: [31, 30]
   k: '-'
-  l: [Base, BaseRu, BaseAlt1]
+  l: [Base, BaseRu, BaseAlt1, BaseAlt2]
 - p: [44, 45]
   k: _
-  l: [Base, BaseRu, BaseAlt1]
+  l: [Base, BaseRu, BaseAlt1, BaseAlt2]
 - p: [12, 24]
   k: BT CLR ALL
   l: [Media]
 - p: [54, 53]
   k: Media
-  l: [Base, BaseAlt1, BaseRu]
 - p: [18, 19]
-  k: +
-  l: [Base, BaseAlt1, BaseRu]
+  k: '='
+  l: [Base, BaseAlt1, BaseRu, BaseAlt2]
 - p: [29, 28]
   k: /
-  l: [Base, BaseAlt1, BaseRu]
+  l: [Base, BaseAlt1, BaseRu, BaseAlt2]
 - p: [40, 41]
   k: \
-  l: [Base, BaseAlt1, BaseRu]
+  l: [Base, BaseAlt1, BaseRu, BaseAlt2]
 - p: [16, 17]
   k: '|'
-  l: [Base, BaseAlt1, BaseRu]
+  l: [Base, BaseAlt1, BaseRu, BaseAlt2]
 - p: [15, 14, 13]
   k: '&layer_enalt'
-  l: [Base, BaseAlt1, BaseRu]
+  l: [Base, BaseAlt1, BaseRu, BaseAlt2]
