@@ -67,7 +67,7 @@
         layer_en: layer_en {
             compatible = "zmk,behavior-macro-one-param";
             #binding-cells = <1>;
-            bindings = <&to 0 &to_en>;
+            bindings = <&macro_param_1to1 &to MACRO_PLACEHOLDER>, <&to_en>;
             label = "LAYER_EN";
             wait-ms = <0>;
             tap-ms = <30>;
