@@ -376,7 +376,7 @@
 
         cmben_alt2 {
             bindings = <&layer_en 2>;
-            key-positions = <15 14 16>;
+            key-positions = <15 14 13>;
             timeout-ms = <60>;
             require-prior-idle-ms = <30>;
             layers = <0 1 2 3>;
@@ -483,6 +483,8 @@
             require-prior-idle-ms = <30>;
 
             // layers = <0 >;
+
+            layers = <0 1 2 3 4 5 6 7 8 9>;
         };
     };
 
@@ -499,11 +501,6 @@
 
         MediaRu {
             if-layers = <6 5>;
-            then-layer = <10>;
-        };
-
-        MediaNumFunc {
-            if-layers = <7 8>;
             then-layer = <10>;
         };
     };
