@@ -489,6 +489,7 @@
             key-positions = <54 53>;
             timeout-ms = <60>;
             require-prior-idle-ms = <30>;
+
             // layers = <0 >;
         };
     };
@@ -516,7 +517,7 @@
     };
 
     // }}} CONDITIONAL LAYERS
-// KEYMAP {{{
+    // KEYMAP {{{
 
     keymap {
         compatible = "zmk,keymap";
@@ -528,7 +529,7 @@
 &kp TAB            &kp Q        &kp W            &kp E           &kp R         &kp T                                            &kp Y                &kp U         &kp I              &kp O             &kp P           &kp BACKSPACE
 &u_mt LCTRL ESC    &mtl LGUI A  &mtl LALT S      &mtl LSHFT D    &mtl LCTRL F  &kp G                                            &kp H                &mtr RCTRL J  &mtr RSHFT K       &mtr RALT L       &mtr RGUI SEMI  &kp SQT
 &mtsk LSHFT LSHFT  &kp Z        &kp X            &kp C           &kp V         &kp B          &kp C_MUTE      &kp C_PLAY_PAUSE  &kp N                &kp M         &kp COMMA          &kp DOT           &kp FSLH        &mtsk RSHFT RSHFT
-                                &mtsk LGUI LGUI  &mtsk LALT ESC  &m_la 6       &u_lt 7 SPACE  &td_lt_lt_kp    &key_repeat       &mtsk RSHIFT RSHIFT  &lasl 4 4     &mtsk RCTRL RCTRL  &u_mt RGUI K_APP
+                                &mtsk LGUI LGUI  &u_mt LALT ESC  &m_la 6       &u_lt 7 SPACE  &td_lt_lt_kp    &key_repeat       &mtsk RSHIFT RSHIFT  &lasl 4 4     &mtsk RCTRL RCTRL  &u_mt RGUI K_APP
             >;
 
             sensor-bindings =
@@ -565,11 +566,11 @@
             label = "BaseAlt2";
             display-name = "BaseAlt2";
             bindings = <
-&trans  &kp N1       &kp N2       &kp N3        &kp N4        &kp N5                    &kp N6  &kp N7        &kp N8        &kp N9       &kp N0       &trans
-&trans  &kp Q        &kp W        &kp L         &kp D         &kp G                     &kp K   &kp J         &kp O         &kp U        &kp MINUS    &trans
-&trans  &mtl LGUI N  &mtl LALT S  &mtl LSHFT R  &mtl LCTRL T  &kp P                     &kp Y   &mtr RCTRL H  &mtr RSHFT E  &mtr RALT I  &mtr RGUI A  &kp SQT
-&trans  &kp Z        &kp X        &kp C         &kp V         &kp B   &trans    &trans  &kp J   &kp M         &kp COMMA     &kp DOT      &kp FSLH     &trans
-                     &trans       &trans        &trans        &trans  &trans    &trans  &trans  &lasl 4 4     &trans        &trans
+&trans  &kp N1       &kp N2       &kp N3        &kp N4        &kp N5                       &kp N6  &kp N7        &kp N8         &kp N9       &kp N0       &trans
+&trans  &kp Q        &kp Y        &kp O         &kp U         &kp EQUAL                    &kp X   &kp L         &kp D          &kp P        &kp Z        &trans
+&kp B   &mtl LGUI C  &mtl LALT I  &mtl LSHFT A  &mtl LCTRL E  &kp MINUS                    &kp K   &mtr RCTRL H  &mtr RSHFT T   &mtr RALT N  &mtr RGUI S  &kp W
+&trans  &kp SQT      &kp COMMA    &kp DOT       &kp FSLH      &kp SEMI   &trans    &trans  &kp J   &kp M         &kp G          &kp F        &kp V        &trans
+                     &trans       &trans        &trans        &trans     &trans    &trans  &trans  &lasl 4 4     &u_mt RCTRL R  &trans
             >;
 
             sensor-bindings =
@@ -614,11 +615,11 @@
         SymRu {
             display-name = "SymRu";
             bindings = <
-&trans         &trans     &trans    &trans       &trans             &trans                       &trans     &trans             &trans        &trans      &trans        &trans
-&en TILDE      &en GRAVE  &en LT    &kp RU_SEMI  &en LEFT_BRACKET   &kp PRCNT                    &en CARET  &en RIGHT_BRACKET  &kp RU_COLON  &en GT      &en SQT       &trans
-&kp RU_NUMERO  &kp EXCL   &en AT    &en HASH     &en DOLLAR         &kp MINUS                    &kp PLUS   &cm_lctrl          &cm_lshft     &cm_lalt    &cm_lgui      &kp RU_DQT
-&tog 5         &kp PIPE   &en AMPS  &kp ASTRK    &kp FSLH           &kp UNDER  &trans    &trans  &kp EQUAL  &kp BSLH           &kp RU_COMMA  &kp RU_DOT  &kp RU_QMARK  &trans
-                          &trans    &trans       &u_lt 6 BACKSLASH  &trans     &trans    &trans  &trans     &none              &trans        &trans
+&trans         &trans     &trans    &trans       &trans             &trans                       &trans           &trans     &trans        &trans      &trans        &trans
+&en TILDE      &en GRAVE  &en LT    &kp RU_SEMI  &en LEFT_BRACKET   &kp PRCNT                    &en HASH         &en CARET  &en LBRC      &en RBRC    &en DOLLAR    &trans
+&kp RU_NUMERO  &kp EXCL   &en AT    &en HASH     &en DOLLAR         &kp MINUS                    &kp KP_MULTIPLY  &cm_lctrl  &cm_lshft     &cm_lalt    &cm_lgui      &kp RU_DQT
+&tog 5         &kp PIPE   &en AMPS  &kp ASTRK    &kp FSLH           &kp UNDER  &trans    &trans  &en AT           &kp BSLH   &kp RU_COMMA  &kp RU_DOT  &kp RU_QMARK  &trans
+                          &trans    &trans       &u_lt 6 BACKSLASH  &trans     &trans    &trans  &trans           &none      &trans        &trans
             >;
         };
 
@@ -680,7 +681,7 @@
         };
     };
 
-// }}} KEYMAP
+    // }}} KEYMAP
 };
 
 /* vim: set ft=dts: */
