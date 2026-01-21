@@ -6,6 +6,7 @@ on:
       - ".github/workflows/build-k03.yml"
       - "config/k03_ruen.keymap"
       - "config/k03.json"
+      - "config/k03.conf"
       # - 'boards/*/*/*.keymap'
 
 jobs:
