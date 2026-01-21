@@ -55,7 +55,7 @@ layers:
   - {t: ESC, h: LALT}
   - '&m_la 6'
   - {t: SPACE, h: Num}
-  - '&td_lt_lt_kp'
+  - {t: ENTER, h: Func}
   - '&key_repeat'
   - {t: RSHIFT, h: RSHIFT}
   - {t: Sym, h: '&m_la 4'}
@@ -197,41 +197,41 @@ layers:
   - '0'
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - SHORT I
-  - TSE
-  - U
-  - KA
-  - IE
-  - EN
-  - GHE
-  - SHA
-  - SHCHA
-  - ZE
+  - CYRILLIC SHORT I
+  - CYRILLIC TSE
+  - CYRILLIC U
+  - CYRILLIC KA
+  - CYRILLIC IE
+  - CYRILLIC EN
+  - CYRILLIC GHE
+  - CYRILLIC SHA
+  - CYRILLIC SHCHA
+  - CYRILLIC ZE
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: ER, h: LGUI}
-  - {t: YERU, h: LALT}
-  - {t: VE, h: LSHFT}
-  - {t: A, h: LCTRL}
-  - PE
-  - ER
-  - {t: O, h: RCTRL}
-  - {t: EL, h: RSHFT}
-  - {t: DE, h: RALT}
-  - {t: ZHE, h: RGUI}
-  - E
+  - {t: CYRILLIC ER, h: LGUI}
+  - {t: CYRILLIC YERU, h: LALT}
+  - {t: CYRILLIC VE, h: LSHFT}
+  - {t: CYRILLIC A, h: LCTRL}
+  - CYRILLIC PE
+  - CYRILLIC ER
+  - {t: CYRILLIC O, h: RCTRL}
+  - {t: CYRILLIC EL, h: RSHFT}
+  - {t: CYRILLIC DE, h: RALT}
+  - {t: CYRILLIC ZHE, h: RGUI}
+  - CYRILLIC E
   - {t: ▽, type: trans}
-  - YA
-  - CHE
-  - ES
-  - EM
-  - I
+  - CYRILLIC YA
+  - CYRILLIC CHE
+  - CYRILLIC ES
+  - CYRILLIC EM
+  - CYRILLIC I
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - TE
-  - SOFT SIGN
-  - BE
-  - YU
+  - CYRILLIC TE
+  - CYRILLIC SOFT SIGN
+  - CYRILLIC BE
+  - CYRILLIC YU
   - .
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -295,7 +295,7 @@ layers:
   - .
   - '?'
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - '&en PERCENT'
   - {t: ▽, type: trans}
   - {t: \, h: Nav}
   - {t: ▽, type: trans}
@@ -385,11 +385,11 @@ layers:
   - {t: '&m_hold_mod_press_key LGUI TAB', s: TAB}
   - Ctl+RIGHT
   - {t: '&m_hold_mod_press_key LCTRL TAB', s: TAB}
-  - KP MULTIPLY
+  - KP DIVIDE
   - KP 7
   - KP 8
   - KP 9
-  - KP PLUS
+  - KP MINUS
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: '&m_press_key_twice LGUI', h: sticky, s: '&m_release_key_twice LGUI'}
@@ -397,11 +397,11 @@ layers:
   - {t: '&m_press_key_twice LSHFT', h: sticky, s: '&m_release_key_twice LSHFT'}
   - {t: '&m_press_key_twice LCTRL', h: sticky, s: '&m_release_key_twice LCTRL'}
   - ENTER
-  - KP DIVIDE
+  - KP MULTIPLY
   - KP 4
   - KP 5
   - KP 6
-  - KP MINUS
+  - KP PLUS
   - KP ENTER
   - {t: Num, h: toggle}
   - Ctl+Z
@@ -440,10 +440,10 @@ layers:
   - F10
   - F11
   - F12
-  - {t: ▽, type: trans}
-  - {t: '&m_hold_mod_press_key LALT TAB', s: TAB}
-  - Ctl+LEFT
-  - {t: '&m_hold_mod_press_key LGUI TAB', s: TAB}
+  - Alt+`
+  - Ctl+Sft+`
+  - ''
+  - ''
   - Alt+Sft+R
   - Sft+Alt+T
   - F12
@@ -482,7 +482,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - ''
+  - {type: held}
   - {t: ▽, type: trans}
   - SPACE
   - {t: ▽, type: trans}
@@ -574,7 +574,7 @@ layers:
   - {t: BT, h: '3'}
   - {t: BT, h: '4'}
   - BT CLR
-  - ''
+  - {t: Mouse, h: toggle}
   - ''
   - PREV
   - PP
@@ -627,13 +627,13 @@ combos:
   k: '`'
   l: [BaseRu]
 - p: [47, 46]
-  k: HARD SIGN
+  k: CYRILLIC HARD SIGN
   l: [BaseRu]
 - p: [22, 34]
-  k: HA
+  k: CYRILLIC HA
   l: [BaseRu]
 - p: [23, 35]
-  k: E
+  k: CYRILLIC E
   l: [BaseRu]
 - p: [18, 19]
   k: '='
@@ -658,4 +658,3 @@ combos:
   l: [Media]
 - p: [54, 53]
   k: Media
-  l: [Base, BaseAlt1, BaseAlt2, BaseRu, Sym, Sym, Nav, Num, Func, Mouse]
