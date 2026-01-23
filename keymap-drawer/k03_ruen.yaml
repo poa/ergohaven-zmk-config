@@ -209,7 +209,7 @@ layers:
   - ZE
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: ER, h: LGUI}
+  - {t: Sft+EF, h: LGUI}
   - {t: YERU, h: LALT}
   - {t: VE, h: LSHFT}
   - {t: A, h: LCTRL}
