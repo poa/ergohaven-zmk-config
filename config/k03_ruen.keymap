@@ -376,7 +376,7 @@
 
         cmben_alt2 {
             bindings = <&layer_en 2>;
-            key-positions = <15 14 13>;
+            key-positions = <14 16>;
             timeout-ms = <60>;
             require-prior-idle-ms = <30>;
             layers = <0 1 2 3>;
@@ -392,7 +392,7 @@
 
         ru_cyr_yo {
             bindings = <&kp GRAVE>;
-            key-positions = <12 24>;
+            key-positions = <17 29>;
             layers = <3>;
             timeout-ms = <60>;
             require-prior-idle-ms = <30>;
@@ -408,15 +408,7 @@
 
         ru_cyr_ha {
             bindings = <&kp RU_CYRILLIC_HA>;
-            key-positions = <22 34>;
-            layers = <3>;
-            timeout-ms = <60>;
-            require-prior-idle-ms = <30>;
-        };
-
-        ru_cyr_e {
-            bindings = <&kp RU_CYRILLIC_E>;
-            key-positions = <23 35>;
+            key-positions = <21 20>;
             layers = <3>;
             timeout-ms = <60>;
             require-prior-idle-ms = <30>;

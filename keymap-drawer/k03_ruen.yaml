@@ -617,23 +617,20 @@ combos:
 - p: [15, 14, 16]
   k: '&layer_en 1'
   l: [Base, BaseAlt1, BaseAlt2, BaseRu]
-- p: [15, 14, 13]
+- p: [14, 16]
   k: '&layer_en 2'
   l: [Base, BaseAlt1, BaseAlt2, BaseRu]
 - p: [15, 16]
   k: '&layer_ru'
   l: [Base, BaseAlt1, BaseAlt2, BaseRu]
-- p: [12, 24]
+- p: [17, 29]
   k: '`'
   l: [BaseRu]
 - p: [47, 46]
   k: HARD SIGN
   l: [BaseRu]
-- p: [22, 34]
+- p: [21, 20]
   k: HA
-  l: [BaseRu]
-- p: [23, 35]
-  k: E
   l: [BaseRu]
 - p: [18, 19]
   k: '='
