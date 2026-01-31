@@ -233,7 +233,7 @@ layers:
   - CYRILLIC BE
   - CYRILLIC YU
   - .
-  - {t: ▽, type: trans}
+  - {t: '&sl_enru 4', h: '&mo_enru 4'}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
