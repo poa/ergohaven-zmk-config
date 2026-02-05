@@ -37,7 +37,7 @@ layers:
   - {t: L, h: LALT}
   - {t: ;, h: RGUI}
   - ''''
-  - {t: LSHFT, h: LSHFT}
+  - LSHFT
   - Z
   - {t: X, h: RIGHT ALT}
   - C
@@ -50,7 +50,7 @@ layers:
   - ','
   - {t: ., h: RALT}
   - /
-  - {t: RSHFT, h: RSHFT}
+  - RSHFT
   - {t: LGUI, h: LGUI}
   - {t: ESC, h: LCTRL}
   - '&m_la 6'
