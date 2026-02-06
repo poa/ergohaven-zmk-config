@@ -54,7 +54,7 @@ layers:
   - {t: LGUI, h: LGUI}
   - {t: ESC, h: LCTRL}
   - '&m_la 6'
-  - {t: SPACE, h: Num}
+  - {t: SPACE, h: Nav}
   - {t: BACKSPACE, h: Func}
   - {t: R, h: LALT}
   - {t: RSHFT, h: RSHFT, s: '&caps_word'}
@@ -197,41 +197,41 @@ layers:
   - '0'
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - CYRILLIC SHORT I
-  - CYRILLIC TSE
-  - CYRILLIC U
-  - CYRILLIC KA
-  - CYRILLIC IE
-  - CYRILLIC EN
-  - CYRILLIC GHE
-  - CYRILLIC SHA
-  - CYRILLIC SHCHA
-  - CYRILLIC ZE
+  - SHORT I
+  - TSE
+  - U
+  - KA
+  - IE
+  - EN
+  - GHE
+  - SHA
+  - SHCHA
+  - ZE
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: CYRILLIC EF, h: LGUI}
-  - {t: CYRILLIC YERU, h: LALT}
-  - {t: CYRILLIC VE, h: LSHFT}
-  - {t: CYRILLIC A, h: LCTRL}
-  - CYRILLIC PE
-  - CYRILLIC ER
-  - {t: CYRILLIC O, h: RCTRL}
-  - {t: CYRILLIC EL, h: RSHFT}
-  - {t: CYRILLIC DE, h: RALT}
-  - {t: CYRILLIC ZHE, h: RGUI}
-  - CYRILLIC E
+  - {t: EF, h: LGUI}
+  - {t: YERU, h: LALT}
+  - {t: VE, h: LSHFT}
+  - {t: A, h: LCTRL}
+  - PE
+  - ER
+  - {t: O, h: RCTRL}
+  - {t: EL, h: RSHFT}
+  - {t: DE, h: RALT}
+  - {t: ZHE, h: RGUI}
+  - E
   - {t: ▽, type: trans}
-  - CYRILLIC YA
-  - CYRILLIC CHE
-  - CYRILLIC ES
-  - CYRILLIC EM
-  - CYRILLIC I
+  - YA
+  - CHE
+  - ES
+  - EM
+  - I
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - CYRILLIC TE
-  - CYRILLIC SOFT SIGN
-  - CYRILLIC BE
-  - CYRILLIC YU
+  - TE
+  - SOFT SIGN
+  - BE
+  - YU
   - .
   - {t: '&sl_enru 4', h: '&mo_enru 4'}
   - {t: ▽, type: trans}
@@ -239,12 +239,73 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: CYRILLIC HA, h: LALT}
+  - {t: HA, h: LALT}
   - {t: ▽, type: trans}
-  - {t: Sym, h: Sym}
+  - {t: SymRu, h: SymRu}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   Sym:
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - '~'
+  - '`'
+  - '['
+  - ']'
+  - ''''
+  - '"'
+  - '#'
+  - ^
+  - '{'
+  - '}'
+  - $
+  - {t: ▽, type: trans}
+  - '&ru RU_NUMERO'
+  - {t: '!', h: LGUI}
+  - {t: '=', h: LALT}
+  - {t: '-', h: LSHFT}
+  - {t: +, h: LCTRL}
+  - '*'
+  - KP ASTERISK
+  - {t: ':', h: RCTRL}
+  - {t: (, h: RSHFT}
+  - {t: ), h: RALT}
+  - {t: ;, h: RGUI}
+  - '"'
+  - {t: Sym, h: toggle}
+  - <
+  - '|'
+  - _
+  - '>'
+  - /
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - '@'
+  - '&'
+  - ','
+  - .
+  - '?'
+  - {t: ▽, type: trans}
+  - '%'
+  - {t: ▽, type: trans}
+  - {t: \, h: Num}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: Sym, h: toggle, type: held}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  SymRu:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -268,7 +329,7 @@ layers:
   - '&en LBRC'
   - '&en RBRC'
   - '&en DOLLAR'
-  - CYRILLIC HA
+  - HA
   - '&ru RU_NUMERO'
   - {t: '!', h: LGUI}
   - {t: '=', h: LALT}
@@ -294,76 +355,15 @@ layers:
   - ','
   - .
   - '?'
-  - CYRILLIC HARD SIGN
+  - HARD SIGN
   - '&en PERCENT'
   - {t: ▽, type: trans}
-  - {t: \, h: Nav}
+  - {t: \, h: Num}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {type: held}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  Nav:
-  - F12
-  - F1
-  - F2
-  - F3
-  - F4
-  - F5
-  - F6
-  - F7
-  - F8
-  - F9
-  - F10
-  - F11
-  - TAB
-  - {t: '&m_hold_mod_press_key LALT TAB', s: TAB}
-  - Ctl+LEFT
-  - {t: '&m_hold_mod_press_key LGUI TAB', s: TAB}
-  - Ctl+RIGHT
-  - {t: '&m_hold_mod_press_key LCTRL TAB', s: TAB}
-  - '&caps_word'
-  - INS
-  - HOME
-  - PG UP
-  - PAUSE BREAK
-  - BACKSPACE
-  - ESC
-  - {t: '&m_press_key_twice LGUI', h: sticky, s: '&m_release_key_twice LGUI'}
-  - {t: '&m_press_key_twice LALT', h: sticky, s: '&m_release_key_twice LALT'}
-  - {t: '&m_press_key_twice LSHFT', h: sticky, s: '&m_release_key_twice LSHFT'}
-  - {t: '&m_press_key_twice LCTRL', h: sticky, s: '&m_release_key_twice LCTRL'}
-  - ENTER
-  - LEFT
-  - DOWN
-  - UP
-  - RIGHT ARROW
-  - PRINTSCREEN
-  - Alt+PRINTSCREEN
-  - {t: Nav, h: toggle}
-  - Ctl+Z
-  - Ctl+X
-  - Ctl+C
-  - Ctl+V
-  - Ctl+B
-  - PP
-  - {t: ▽, type: trans}
-  - CAPS
-  - DEL
-  - END
-  - PG DN
-  - SCROLLLOCK
-  - {t: Mouse, h: toggle}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {type: held}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - SPACE
-  - {t: Sym, type: held}
+  - {t: SymRu, h: toggle, type: held}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   Num:
@@ -419,14 +419,75 @@ layers:
   - ENTER
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
+  - {t: Num, h: toggle, type: held}
   - {t: ▽, type: trans}
-  - {type: held}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - SPACE
-  - KP 0
+  - {t: KP 0, h: Sym, type: held}
   - KP 0
   - KP DOT
+  Nav:
+  - F12
+  - F1
+  - F2
+  - F3
+  - F4
+  - F5
+  - F6
+  - F7
+  - F8
+  - F9
+  - F10
+  - F11
+  - TAB
+  - {t: '&m_hold_mod_press_key LALT TAB', s: TAB}
+  - Ctl+LEFT
+  - {t: '&m_hold_mod_press_key LGUI TAB', s: TAB}
+  - Ctl+RIGHT
+  - {t: '&m_hold_mod_press_key LCTRL TAB', s: TAB}
+  - '&caps_word'
+  - INS
+  - HOME
+  - PG UP
+  - PAUSE BREAK
+  - BACKSPACE
+  - ESC
+  - {t: '&m_press_key_twice LGUI', h: sticky, s: '&m_release_key_twice LGUI'}
+  - {t: '&m_press_key_twice LALT', h: sticky, s: '&m_release_key_twice LALT'}
+  - {t: '&m_press_key_twice LSHFT', h: sticky, s: '&m_release_key_twice LSHFT'}
+  - {t: '&m_press_key_twice LCTRL', h: sticky, s: '&m_release_key_twice LCTRL'}
+  - ENTER
+  - LEFT
+  - DOWN
+  - UP
+  - RIGHT ARROW
+  - PRINTSCREEN
+  - Alt+PRINTSCREEN
+  - {t: Nav, h: toggle}
+  - Ctl+Z
+  - Ctl+X
+  - Ctl+C
+  - Ctl+V
+  - Ctl+B
+  - PP
+  - {t: ▽, type: trans}
+  - CAPS
+  - DEL
+  - END
+  - PG DN
+  - SCROLLLOCK
+  - {t: Mouse, h: toggle}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: Nav, h: toggle, type: held}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - SPACE
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
   Func:
   - {t: ▽, type: trans}
   - ''
@@ -482,7 +543,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {type: held}
+  - {t: Func, h: toggle, type: held}
   - {t: ▽, type: trans}
   - SPACE
   - {t: ▽, type: trans}
@@ -627,10 +688,10 @@ combos:
   k: '`'
   l: [BaseRu]
 - p: [47, 46]
-  k: CYRILLIC HARD SIGN
+  k: HARD SIGN
   l: [BaseRu]
 - p: [21, 20]
-  k: CYRILLIC HA
+  k: HA
   l: [BaseRu]
 - p: [18, 19]
   k: '='
