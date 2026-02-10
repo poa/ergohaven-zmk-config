@@ -54,7 +54,7 @@ layers:
   - {t: LGUI, h: LGUI}
   - {t: ESC, h: LCTRL}
   - '&m_la 6'
-  - {t: SPACE, h: Nav}
+  - {t: SPACE, h: '&m_la 7'}
   - {t: BACKSPACE, h: Func}
   - {t: R, h: LALT}
   - {t: RSHFT, h: RSHFT, s: '&caps_word'}
@@ -481,7 +481,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: Nav, h: toggle, type: held}
+  - {t: Nav, h: toggle}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - SPACE
@@ -664,7 +664,7 @@ layers:
   - LEFT
   - RIGHT
   - {type: held}
-  - {type: held}
+  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
